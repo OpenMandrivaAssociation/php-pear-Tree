@@ -4,18 +4,18 @@
 
 Summary:	%{_pearname} - Generic tree management
 Name:		php-pear-%{_pearname}
-Version:	0.3.1
-Release:	%mkrel 3
+Version:	0.3.3
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Tree/
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Provides methods to read and manipulate trees, which are stored in the
@@ -92,7 +92,4 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/Dynamic/*.php
 %{_datadir}/pear/%{_class}/Memory/*.php
-
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
