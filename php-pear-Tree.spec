@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.3.4
-Release:	%mkrel 3
+Release:	%mkrel 4
 Summary:	Generic tree management
 License:	PHP License
 Group:		Development/PHP
