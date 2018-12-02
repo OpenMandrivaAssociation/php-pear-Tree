@@ -4,7 +4,7 @@
 Summary:	Generic tree management
 Name:		php-pear-%{modname}
 Version:	0.3.7
-Release:	11
+Release:	12
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/Tree/
@@ -48,4 +48,6 @@ install -m 644 %{modname}.xml %{buildroot}%{_datadir}/pear/packages
 %doc %{modname}-%{version}/docs/*
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/packages/%{modname}.xml
+%{_datadir}//pear/doc/Tree/docs/*
+%{_datadir}//pear/test/Tree/tests/*
 
